@@ -33,8 +33,9 @@
       </p>
       <Button
         @click="retryFetch"
-        variant="outline"
+        variant="secondary"
         aria-label="Retry loading crowdfunding deals"
+        class="hover:bg-primary/90 hover:text-white"
       >
         <Icon
           name="heroicons:arrow-path"

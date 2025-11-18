@@ -12,6 +12,7 @@
             :disabled="currentPage === 1"
             :aria-label="`Go to page ${currentPage - 1}`"
             :aria-disabled="currentPage === 1"
+            class="text-black"
           />
         </PaginationItem>
 
@@ -20,7 +21,9 @@
           <PaginationLink
             @click="$emit('pageChange', 1)"
             :is-active="currentPage === 1"
-            :aria-label="currentPage === 1 ? 'Current page, page 1' : 'Go to page 1'"
+            :aria-label="
+              currentPage === 1 ? 'Current page, page 1' : 'Go to page 1'
+            "
             :aria-current="currentPage === 1 ? 'page' : undefined"
           >
             1
@@ -33,15 +36,16 @@
         </PaginationItem>
 
         <!-- Middle Pages -->
-        <template
-          v-for="page in getMiddlePages()"
-          :key="page"
-        >
+        <template v-for="page in getMiddlePages()" :key="page">
           <PaginationItem v-if="page > 1 && page < totalPages">
             <PaginationLink
               @click="$emit('pageChange', page)"
               :is-active="page === currentPage"
-              :aria-label="page === currentPage ? `Current page, page ${page}` : `Go to page ${page}`"
+              :aria-label="
+                page === currentPage
+                  ? `Current page, page ${page}`
+                  : `Go to page ${page}`
+              "
               :aria-current="page === currentPage ? 'page' : undefined"
             >
               {{ page }}
@@ -59,7 +63,11 @@
           <PaginationLink
             @click="$emit('pageChange', totalPages)"
             :is-active="currentPage === totalPages"
-            :aria-label="currentPage === totalPages ? `Current page, page ${totalPages}` : `Go to page ${totalPages}`"
+            :aria-label="
+              currentPage === totalPages
+                ? `Current page, page ${totalPages}`
+                : `Go to page ${totalPages}`
+            "
             :aria-current="currentPage === totalPages ? 'page' : undefined"
           >
             {{ totalPages }}
@@ -72,20 +80,19 @@
             :disabled="currentPage === totalPages"
             :aria-label="`Go to page ${currentPage + 1}`"
             :aria-disabled="currentPage === totalPages"
+            class="text-black"
           />
         </PaginationItem>
       </PaginationContent>
     </Pagination>
-    <span class="sr-only">
-      Page {{ currentPage }} of {{ totalPages }}
-    </span>
+    <span class="sr-only"> Page {{ currentPage }} of {{ totalPages }} </span>
   </nav>
 </template>
 
 <script setup lang="ts">
 /**
  * DealsPagination Component
- * 
+ *
  * Reusable pagination component for deals table
  * Handles page navigation and displays page numbers with ellipsis
  */
@@ -114,11 +121,6 @@ defineEmits<{
  * @returns Array of page numbers to display
  */
 function getMiddlePages(): number[] {
-  return [
-    props.currentPage - 1,
-    props.currentPage,
-    props.currentPage + 1,
-  ];
+  return [props.currentPage - 1, props.currentPage, props.currentPage + 1];
 }
 </script>
-

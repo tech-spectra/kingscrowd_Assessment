@@ -19,8 +19,9 @@
     <Button
       v-if="showBackButton"
       @click="$emit('goToPage', 1)"
-      variant="outline"
+      variant="secondary"
       aria-label="Navigate to the first page of results"
+      class="hover:bg-primary/90 hover:text-white"
     >
       <Icon name="heroicons:arrow-left" class="mr-2 h-4 w-4" aria-hidden="true" />
       Go to First Page

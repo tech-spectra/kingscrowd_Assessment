@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full max-w-full sm:max-w-md">
+  <div class="relative w-full max-w-full sm:w-[300px] sm:max-w-lg">
     <div class="relative">
       <Icon
         name="heroicons:magnifying-glass"
