@@ -15,7 +15,7 @@
         @keydown.escape="handleEscape"
         :placeholder="placeholder"
         :aria-label="ariaLabel"
-        class="w-full rounded-md border border-input bg-background px-10 pr-10 py-2.5 sm:py-2 text-sm sm:text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 touch-manipulation"
+        class="w-full rounded-md text-black border border-input bg-background px-10 pr-10 py-2.5 sm:py-2 text-sm sm:text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 touch-manipulation"
       />
       <button
         v-if="modelValue"
