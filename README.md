@@ -6,7 +6,12 @@ A modern, professional Nuxt.js application for exploring active public fundraisi
 
 **What I Built:** A Nuxt 3 application that displays active Reg CF and Reg A+ crowdfunding deals in a sortable, paginated table with CSV export functionality. The app fetches data from the KingsCrowd API via a secure server route, handles all loading/error/empty states, and provides a professional user experience.
 
+## 💻 Demo 
+
+![Assessment Demo](public/demo.gif)
+
 ## 🚀 Features
+
 
 - **📊 Interactive Data Table**: View active crowdfunding deals with sortable columns
 - **🔍 Advanced Sorting**: Sort by Money Raised and Valuation columns
