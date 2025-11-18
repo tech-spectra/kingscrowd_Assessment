@@ -1,0 +1,16 @@
+# robots.txt for KingsCrowd Crowdfunding Deals Explorer
+# https://www.robotstxt.org/robotstxt.html
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow crawling of API endpoints and internal routes
+Disallow: /api/
+Disallow: /_nuxt/
+
+# Crawl delay (optional - adjust based on server capacity)
+# Crawl-delay: 1
+
+# Sitemap location (uncomment and update when sitemap is available)
+# Sitemap: https://kingscrowd-assesment.com/sitemap.xml
