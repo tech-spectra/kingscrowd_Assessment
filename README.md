@@ -2,9 +2,32 @@
 
 A modern, professional Nuxt.js application for exploring active public fundraising opportunities from Reg CF and Reg A+ crowdfunding platforms. Built with Vue 3, TypeScript, and Shadcn UI components.
 
-## 📋 Assessment Summary
+## 📝 Summary
 
-**What I Built:** A Nuxt 3 application that displays active Reg CF and Reg A+ crowdfunding deals in a sortable, paginated table with CSV export functionality. The app fetches data from the KingsCrowd API via a secure server route, handles all loading/error/empty states, and provides a professional user experience.
+### **What I Built**
+- A Nuxt 3 application that displays active Reg CF and Reg A+ crowdfunding deals.
+- Sortable table with pagination and CSV export functionality.
+- Secure server route for KingsCrowd API integration.
+- Includes full loading, empty, and error states.
+- Polished UI using Shadcn components and Tailwind CSS.
+
+### **Trade-offs**
+- Focused on core features instead of building advanced filters.
+- Skipped detailed deal view pages due to time constraints.
+- Did not implement caching or prefetching to keep the architecture simple.
+- Prioritized reliability and clarity over adding extra UI complexity.
+
+### **What I’d Do Next**
+- Add global search and column-level filtering.
+- Implement caching/prefetching for smoother navigation.
+- Create individual deal detail pages.
+- Add bookmarking or “watchlist” functionality for users.
+
+### **How I Used AI**
+- Helped speed up boilerplate and repetitive component setup.
+- Assisted in structuring composables and improving code organization.
+- Used for UI/UX refinement, naming, and documentation clarity.
+- All core logic, API integration, and data architecture were built manually.
 
 ## 💻 Demo 
 
