@@ -33,7 +33,7 @@
 import Button from "~/components/ui/button/Button.vue";
 
 interface Props {
-  showBackButton?: boolean;
+  showBackButton?: boolean | null;
 }
 
 withDefaults(defineProps<Props>(), {

@@ -1,5 +1,5 @@
 <template>
-  <ul :class="cn('flex flex-row items-center gap-1', $attrs.class)">
+  <ul :class="cn('flex flex-row items-center gap-1', $attrs.class as string | undefined)">
     <slot />
   </ul>
 </template>

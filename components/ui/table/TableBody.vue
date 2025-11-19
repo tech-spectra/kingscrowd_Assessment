@@ -1,5 +1,5 @@
 <template>
-  <tbody :class="cn('[&_tr:last-child]:border-0', $attrs.class)">
+  <tbody :class="cn('[&_tr:last-child]:border-0', $attrs.class as string | undefined)">
     <slot />
   </tbody>
 </template>

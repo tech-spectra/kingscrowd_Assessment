@@ -1,5 +1,5 @@
 <template>
-  <li :class="cn('', $attrs.class)">
+  <li :class="cn('', $attrs.class as string | undefined)">
     <slot />
   </li>
 </template>

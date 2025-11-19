@@ -3,7 +3,7 @@
     :class="
       cn(
         'animate-pulse rounded-md bg-muted',
-        $attrs.class
+        $attrs.class as string | undefined
       )
     "
   />

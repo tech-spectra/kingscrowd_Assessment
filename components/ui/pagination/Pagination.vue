@@ -2,7 +2,7 @@
   <nav
     role="navigation"
     aria-label="pagination"
-    :class="cn('mx-auto flex w-full justify-center', $attrs.class)"
+    :class="cn('mx-auto flex w-full justify-center', $attrs.class as string | undefined)"
   >
     <ul class="flex flex-row items-center gap-1">
       <slot />

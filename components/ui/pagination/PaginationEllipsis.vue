@@ -1,5 +1,5 @@
 <template>
-  <div :class="cn('flex h-9 sm:h-10 w-9 sm:w-10 items-center justify-center', $attrs.class)">
+  <div :class="cn('flex h-9 sm:h-10 w-9 sm:w-10 items-center justify-center', $attrs.class as string | undefined)">
     <span class="text-muted-foreground text-xs sm:text-sm">...</span>
   </div>
 </template>

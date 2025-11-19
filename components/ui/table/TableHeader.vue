@@ -1,5 +1,5 @@
 <template>
-  <thead :class="cn('[&_tr]:border-b', $attrs.class)">
+  <thead :class="cn('[&_tr]:border-b', $attrs.class as string | undefined)">
     <slot />
   </thead>
 </template>

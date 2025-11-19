@@ -4,7 +4,7 @@
     :class="
       cn(
         'p-3 sm:p-4 align-middle text-center border-r border-border last:border-r-0 text-xs sm:text-sm [&:has([role=checkbox])]:pr-0',
-        $attrs.class
+        $attrs.class as string | undefined
       )
     "
   >
